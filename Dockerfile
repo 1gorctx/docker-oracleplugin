@@ -9,9 +9,9 @@ RUN mkdir /opt/zdba
 
 WORKDIR /opt/zdba
 
-COPY zdba.tar.gz ./
+COPY zdba/zdba.tar.gz ./
 
-COPY oracle-instantclient*.rpm ./
+COPY oracle/oracle-instantclient*.rpm ./
 
 RUN \
   yum_packages=" \
